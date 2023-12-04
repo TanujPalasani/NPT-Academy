@@ -1,0 +1,93 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: beige; /* Changed to beige color */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+ header {
+    background-color: #009688; /* Changed to #009688 color */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 28px;
+    font-weight: bold;
+ }
+
+ section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+ }
+
+ .card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    transition: transform 0.3s ease-in-out;
+ }
+
+ .card:hover {
+    transform: scale(1.05);
+ }
+
+ .card img {
+    max-width: 100%;
+    border-radius: 8px;
+ }
+ 
+ .card div{
+   max-width: 100%;
+   max-height: 207px;
+ }
+ 
+
+ h2 {
+    color: #009688; /* Changed to #009688 color */
+    margin-top: 15px;
+    font-size: 24px;
+ }
+
+ p {
+    color: #555;
+    font-size: 16px;
+    margin-bottom: 20px;
+ }
+
+ .btn {
+    display: inline-block;
+    background-color: #009688; /* Changed to #009688 color */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+ }
+
+ .btn:hover {
+    background-color: #00796b; /* Darker shade on hover */
+ }
+
+ .back-link {
+       color: #009688;
+       text-decoration: none;
+       display: inline-block;
+       margin-top: 20px;
+       margin-bottom: 10px;
+       margin-left: 150px;
+       border: 2px solid #009688;
+       padding: 8px 16px;
+       border-radius: 4px;
+       transition: background 0.3s, color 0.3s;
+   }
+
+   .back-link:hover {
+       background: #009688;
+       color: #fff;
+   }

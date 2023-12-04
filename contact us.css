@@ -1,0 +1,73 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: beige;
+    color: #333;
+}
+
+.contact-details-container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+h2 {
+    color: #009688;
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 16px;
+}
+
+.logo {
+    width: 80px;
+    margin-bottom: 20px;
+}
+
+.back-link {
+    color: #009688;
+    text-decoration: none;
+}
+
+.contact-details {
+    margin-top: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* Style the email and phone links */
+a {
+    color: #009688;
+    text-decoration: none;
+}
+
+.back-link {
+    color: #009688;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+    border: 2px solid #009688;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.back-link:hover {
+    background: #009688;
+    color: #fff;
+}

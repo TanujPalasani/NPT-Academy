@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Query - NPT Academy</title>
+    <link rel="icon" href="logo.png" type="png">
+    <link rel="stylesheet" href="qurey.css">
+    
+</head>
+<body>
+    <div class="contact-container">
+        <img style="height: 80px;width: 200px;" src="logo12.png" alt="NPT Logo" class="logo">
+        <h2>Contact us if any Query</h2>
+        <p>
+            If you have any questions or concerns, please feel free to reach out to us. We are here to help you.
+        </p>
+
+        <div class="contact-form">
+            <form id="contactForm" onsubmit="submitForm(event)">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Submit</button>
+
+                <a href="welcome2.html" class="back-link">Back to Home</a>
+
+            </form>
+        </div>
+    </div>
+
+    <!-- Popup Container -->
+    <div class="popup-container" id="popupContainer">
+        <div class="popup">
+            <p>Successfully submitted!</p>
+            <button onclick="closePopupAndRedirect()">OK</button>
+        </div>
+    </div>
+
+    <script>
+        function submitForm(event) {
+            event.preventDefault();
+
+            // Show the popup
+            document.getElementById('popupContainer').style.display = 'flex';
+        }
+
+        function closePopupAndRedirect() {
+            // Close the popup
+            document.getElementById('popupContainer').style.display = 'none';
+
+            // Redirect to index.html
+            window.location.href = 'welcome2.html';
+        }
+    </script>
+</body>
+</html>
